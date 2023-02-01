@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # Ignore SQLite database file
-*.sqlite3
+db.sqlite3
