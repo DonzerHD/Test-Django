@@ -1,0 +1,15 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<h2>{{ listing.title }}</h2>
+
+<ul>
+ <li>Genre : {{ listing.Nosold |yesno }}</li>
+ <li>Année : {{ listing.year }}</li>
+ <li>band: {{ listing.band.name }}</li>
+
+
+<a href="{% url 'listing' %}">Retour à tous les groupes</a>
+
+{% endblock %}

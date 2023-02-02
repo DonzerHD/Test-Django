@@ -3,7 +3,7 @@ from listings.models import Band, Listing
 
 # Register your models here.
 class BandAdmin (admin.ModelAdmin):
-   list_display = ('name', 'genre', 'year_formed', 'active')
+   list_display = ('id','name', 'genre', 'year_formed', 'active')
 
 admin.site.register(Band, BandAdmin)
 

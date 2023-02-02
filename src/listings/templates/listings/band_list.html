@@ -6,8 +6,8 @@
 <h1>Groupes</h1>
 
 <ul>
- {% for listing in listings %}
-  <li><a href="{% url 'listing_detail' listing.id %}">{{ listing.title }}</a></li>
+ {% for band in bands %}
+  <li><a href="{% url 'band_detail' band.id %}">{{ band.name }}</a></li>
  {% endfor %}
 </ul>
 
